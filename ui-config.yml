@@ -1,0 +1,21 @@
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: "01-login"
+      label: "Login"
+      solveButton: true
+    - name: "02-view"
+      label: "View"
+      solveButton: true
+    - name: "03-run-stress-ng"
+      label: "Run Stress Ng"
+      solveButton: true
+    - name: "04-perf"
+      label: "Perf"
+      solveButton: true
+
+tabs:
+  - name: ">_ terminal"
+    url: /wetty

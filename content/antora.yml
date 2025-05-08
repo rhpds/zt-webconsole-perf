@@ -1,0 +1,9 @@
+---
+name: modules
+version: master
+
+asciidoc:
+  attributes:
+    lab_name: "Using Web Console to Monitor Performance"
+    release-version: master
+    page-pagination: true
