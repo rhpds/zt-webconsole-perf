@@ -7,3 +7,5 @@ and Network
 
 For CPU, the graph on the left of the line shows the *utilization*, and
 the graph on the right of the graph shows the *saturation*
+
+To end the lab click the "End" button located at the botton left of your screen, or close the window.
