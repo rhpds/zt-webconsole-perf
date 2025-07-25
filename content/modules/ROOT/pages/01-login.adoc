@@ -19,7 +19,7 @@ Once the login page is presented, use the following credentials to log
 into the Web Console:
 
 Username: *rhel* +
-Password: *redhat*
+Password: *{bastion_ssh_password}*
 
 .Web Console Login
 image::../assets/Web-console-login.png[Web Console Login]
