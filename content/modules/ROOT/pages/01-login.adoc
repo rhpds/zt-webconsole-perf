@@ -25,6 +25,6 @@ Click `+Turn on administrative access+`.
 Next do the following:
 
 [arabic]
-. Enter the password: *redhat*
+. Enter the password: *{bastion_ssh_password}*
 . Click `+Authenticate+`
 
