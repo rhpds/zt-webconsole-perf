@@ -2,18 +2,12 @@ Click on the tab titled *RHEL Web Console* at the top of your lab system
 interface. Selecting this tab will open the lab system’s Web Console in
 a new browser tab or window.
 
-.web console
-image::../assets/pop-out-2.png[web console]
-
 Click `+Advanced+`
 
-.Connection not private
-image::../assets/connection-not-private.png[Connection not private]
 
 Then click `+Proceed to rhel.xxxx.instruqt.io+`
 
-.Proceed
-image::../assets/proceed.png[Proceed]
+
 
 Once the login page is presented, use the following credentials to log
 into the Web Console:
@@ -21,16 +15,12 @@ into the Web Console:
 Username: *rhel* +
 Password: *{bastion_ssh_password}*
 
-.Web Console Login
-image::../assets/Web-console-login.png[Web Console Login]
 
 Now that you are logged into the Web Console, we must turn on
 administrative access.
 
 Click `+Turn on administrative access+`.
 
-.admin access
-image::../assets/turn-on-admin.png[admin access]
 
 Next do the following:
 
@@ -38,5 +28,3 @@ Next do the following:
 . Enter the password: *redhat*
 . Click `+Authenticate+`
 
-.auth
-image::../assets/auth.png[auth]
