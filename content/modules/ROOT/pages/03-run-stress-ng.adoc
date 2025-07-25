@@ -6,6 +6,8 @@ floating point, integer, bit manipulation and control flow. In this step
 of the lab, we will use the CPU-intensive matrix stressor, which is one
 of the many tests that heats CPUs the best.
 
+NOTE: For the following instruction, you will need to click the "terminal" tab in the top left of your screen.
+
 Using the terminal window, the stress-ng matrix stressor -
 
 ....
@@ -15,9 +17,11 @@ stress-ng --matrix 0 -t 45s
 The stressor should run for a 45-second duration and will drive up CPU
 utilization across both the v-CPUs on the instance.
 
+NOTE: For the following instruction, you will need to click the "Web Console" tab in the top left of your screen.
+
 While stress-ng is still running, you will see that the 2 CPUs are hot
 on the CPU tile in the web console
 
+NOTE: To see the updated results, you may also need to click the button "Load earlier data" in the bottom middle of the screen
 
-The CPU graph will also be updated with the *CPU spike* message and
-graph
+The CPU graph will also be updated with the *CPU spike* message and graph.
