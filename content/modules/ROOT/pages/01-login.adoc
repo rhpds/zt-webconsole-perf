@@ -12,11 +12,3 @@ Now that you are logged into the Web Console, we must turn on
 administrative access.
 
 Click `+Turn on administrative access+`.
-
-
-Next do the following:
-
-[arabic]
-. Enter the password: *{bastion_ssh_password}*
-. Click `+Authenticate+`
-
