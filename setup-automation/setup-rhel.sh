@@ -1,7 +1,10 @@
 #!/bin/bash
 
-subscription-manager config --rhsm.manage_repos=1
-subscription-manager register --activationkey=${ACTIVATION_KEY} --org=12451665 --force
+# install the packages
+dnf install -y --releasever=10 --installroot=$scratchmnt redhat-release
+dnf install -y --setopt=reposdir=/etc/yum.repos.d \
+      --installroot=$scratchmnt \
+      --setopt=cachedir=/var/cache/dnf httpd
 
 echo "Adding wheel" > /root/post-run.log
 usermod -aG wheel rhel
