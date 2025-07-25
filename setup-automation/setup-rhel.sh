@@ -6,6 +6,13 @@ dnf install -y --setopt=reposdir=/etc/yum.repos.d \
       --installroot=$scratchmnt \
       --setopt=cachedir=/var/cache/dnf httpd
 
+# Enable cockpit functionality in showroom.
+dnf -y remove tlog cockpit-session-recording
+echo "[WebService]" > /etc/cockpit/cockpit.conf
+echo "Origins = https://cockpit-${GUID}.${DOMAIN}" >> /etc/cockpit/cockpit.conf
+echo "AllowUnencrypted = true" >> /etc/cockpit/cockpit.conf
+systemctl enable --now cockpit.socket
+
 echo "Adding wheel" > /root/post-run.log
 usermod -aG wheel rhel
 
@@ -23,21 +30,3 @@ systemctl restart cockpit
 echo "DONE" >> /root/post-run.log
 
 touch /root/post-run.log.done
-
-n=1
-GREEN='\033[0;32m' 
-NC='\033[0m' # No Color
-
-while [ ! -f /root/post-run.log.done ] ;
-do
-      if test "$n" = "1"
-      then
-	    clear
-            n=$(( n+1 ))	 # increments $n
-      else
-	    printf "."
-      fi
-      sleep 2
-done
-clear
-echo -e "${GREEN}Ready to start your scenario${NC}"
