@@ -1,4 +1,6 @@
-Click on the tab titled *Web Console* at the top of your lab system
+This Lab has preinstalled the Performance Co-Pilot (PCP) packages and enabled the service. 
+
+To look at the system live performance, click on the tab titled *Web Console* at the top of your lab system
 interface. 
 
 Once the login page is presented, use the following credentials to log
