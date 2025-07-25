@@ -25,3 +25,5 @@ on the CPU tile in the web console
 NOTE: To see the updated results, you may also need to click the button "Load earlier data" in the bottom middle of the screen
 
 The CPU graph will also be updated with the *CPU spike* message and graph.
+
+To continue click the "Next" button located at the botton left of your screen.
