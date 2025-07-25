@@ -14,3 +14,5 @@ Now that you are logged into the Web Console, we must turn on
 administrative access.
 
 Click `+Turn on administrative access+`.
+
+To continue click the "Next" button located at the botton left of your screen.
