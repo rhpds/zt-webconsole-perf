@@ -18,4 +18,6 @@ antora:
 
 tabs:
   - name: ">_ terminal"
-    url: /wetty
+    url: /wetty_rhel/ssh/root
+  - name: "Web Console"
+    url: https://cockpit-${guid}.${domain}/
