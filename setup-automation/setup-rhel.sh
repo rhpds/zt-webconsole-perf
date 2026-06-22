@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# install the packages
 # Unregister and register the VM
 subscription-manager clean
 subscription-manager register --activationkey=12-5-22-instruqt --org=12451665 --force
 
+# install the packages
 dnf install -y --releasever=10 --installroot=$scratchmnt redhat-release
 dnf install -y --setopt=reposdir=/etc/yum.repos.d \
       --installroot=$scratchmnt \
