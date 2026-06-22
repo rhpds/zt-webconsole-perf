@@ -12,11 +12,11 @@ virtualmachines:
         value: "bastions"
     networks:
       - default
-    packages:
-      - cockpit
-      - sssd-proxy
-      - pcp
-      - python3-pcp
+    # packages:
+    # - cockpit
+    # - sssd-proxy
+    # - pcp
+    # - python3-pcp
     services:
       - name: cockpit
         ports:
