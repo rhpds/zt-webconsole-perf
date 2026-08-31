@@ -6,16 +6,17 @@ virtualmachines:
     memory: "4G"
     cores: 1
     image_size: "40G"
+    register_satellite: false
     tags:
       - key: "AnsibleGroup"
         value: "bastions"
     networks:
       - default
-    packages:
-      - cockpit
-      - sssd-proxy
-      - pcp
-      - python3-pcp
+    # packages:
+    # - cockpit
+    # - sssd-proxy
+    # - pcp
+    # - python3-pcp
     services:
       - name: cockpit
         ports:
